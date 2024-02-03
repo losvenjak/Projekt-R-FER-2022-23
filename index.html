@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt_R</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="fabric.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">  
+</head>
+<body>
+    <div class="header">
+        <h1>Ispitivanje svojstava grafa</h1>
+    </div>    
+     
+    <div class="grid-container">
+        <div class="grid_item_2">            
+            <div class="canvas"> 
+                <div class="botuni">
+                    <button class= "myButton" name="adding-vertex" onclick="activateAddingVertex()", 
+                        style="color: black; font-family: 'Maven Pro', sans-serif;
+                        font-weight:600; cursor: pointer; padding: 12px 25px;">Dodaj vrhove</button>
+                    <button class= "myButton" name="adding-edge" onclick="uploadTable()",
+                        style="color: black; font-family: 'Maven Pro', sans-serif;
+                        font-weight:600; cursor: pointer; padding: 12px 25px;">Dodaj bridove</button>
+                </div>
+                <div class="brisi">
+                    <button class= "delButton" name="reset" onclick="resetProgram()",
+                    style="color: black; font-family: 'Maven Pro', sans-serif;
+                    font-weight:600; cursor: pointer; padding: 10px 20px;">Reset</button>
+                </div> 
+                <canvas id="canvas"></canvas>
+            </div>           
+        </div>
+        <div class="grid_item_1">       
+            <div class="matrix">
+                <div id="matrix"></div>
+            </div>
+            <div class="result">        
+                <div id="a"></div>
+            </div>
+        <div id="display"></div>
+        </div>        
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="adjacencyMatrix.js"></script>
+    <script src="checkSimple.js"></script>
+    <script src="checkConnected.js"></script>
+    <script src="checkEuler.js"></script>
+    <script src="checkHamilton.js"></script>
+    <script src="checkBridge.js"></script>
+    <script src="checkChromIndex.js"></script>
+    <script src="checkChromNum.js"></script>
+ 
+</body>
+</html>
